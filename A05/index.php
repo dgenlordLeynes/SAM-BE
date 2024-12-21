@@ -12,12 +12,13 @@
         html {
             height: 100%;
             font-family: "Inconsolata", sans-serif;
+            background-color: burlywood;
         }
 
         .bgimg {
             background-position: center;
             background-size: cover;
-            background-image: url("/w3images/coffeehouse.jpg");
+            background-image: url("https://i.pinimg.com/originals/69/24/07/6924077c26b44568acf9a2a666cd5682.gif");
             min-height: 75%;
         }
     </style>
@@ -37,7 +38,6 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#where">Where</a></li>
                 </ul>
             </div>
         </div>
@@ -46,7 +46,7 @@
     <!-- Header with image -->
     <header class="bgimg d-flex align-items-center text-center text-white" id="home">
         <div class="container">
-            <h1 class="display-1">The Cafe</h1>
+            <h1 class="display-1">Dgenlord's Island Personalities</h1>
             <p class="lead">15 Adr Street, 5015</p>
         </div>
     </header>
@@ -59,11 +59,11 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>We serve fresh made-to-order breakfast and lunch sandwiches, sides, salads, and more.</p>
             <blockquote class="blockquote text-center">
-                <p class="mb-0">"Use products from nature for what it's worth - but never too early, nor too late. Fresh
+                <p class="mb-5">"Use products from nature for what it's worth - but never too early, nor too late. Fresh
                     is the new sweet."</p>
                 <footer class="blockquote-footer">Chef, Coffeeist, and Owner: Liam Brown</footer>
             </blockquote>
-            <img src="/w3images/coffeeshop.jpg" class="img-fluid mt-3" alt="Coffee Shop">
+            <img src="https://i.pinimg.com/736x/a3/5c/61/a35c61f2825678dd6c9e9a497f7dc768.jpg" class="img-fluid mt-3" alt="Coffee Shop">
             <p><strong>Opening hours:</strong> Everyday from 6am to 5pm</p>
             <p><strong>Address:</strong> 15 Adr Street, 5015, NY</p>
         </div>
@@ -98,38 +98,19 @@
                     <h5>Chocolato</h5>
                     <p>Chocolate espresso with milk $4.50</p>
                 </div>
+                <div class="tab-pane fade" id="3" role="tabpanel">
+                    <h5>Coffee</h5>
+                    <p>Regular coffee $2.50</p>
+                    <h5>Chocolato</h5>
+                    <p>Chocolate espresso with milk $4.50</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="py-5" id="where">
-        <div class="container">
-            <h2 class="text-center mb-4">Where to Find Us</h2>
-            <p>Find us at some address at some place.</p>
-            <img src="/w3images/map.jpg" class="img-fluid mb-3" alt="Map">
-            <p>We offer full-service catering for any event, large or small.</p>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Name" required>
-                </div>
-                <div class="mb-3">
-                    <input type="number" class="form-control" placeholder="How many people" required>
-                </div>
-                <div class="mb-3">
-                    <input type="datetime-local" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" placeholder="Message or Special Requirements" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark w-100">Send Message</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-center py-4 bg-light">
-        <p>Powered by <a href="https://getbootstrap.com" target="_blank">Bootstrap</a></p>
+        <p>&copy; 2024 Dgenlords's Website</p>
     </footer>
 </body>
 
