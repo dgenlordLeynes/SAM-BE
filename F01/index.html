@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cafe Delight - A cozy cafe offering a variety of delicious coffee and baked goods.">
+    <meta name="description"
+        content="Cafe Delight - A cozy cafe offering a variety of delicious coffee and baked goods.">
     <meta name="keywords" content="cafe, coffee, bakery, desserts, events">
     <title>Cafe Delight</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+
     <style>
         body {
             background-color: #f8f9fa;
@@ -18,7 +21,7 @@
         }
 
         header {
-            background-color: #0078D0; /* Olympic Blue */
+            background-color: #0078D0;
             color: white;
             text-align: center;
             padding: 20px;
@@ -42,46 +45,56 @@
         }
 
         .btn-primary {
-            background-color: #FFB114; /* Olympic Yellow */
+            background-color: #FFB114;
         }
 
         .btn-primary:hover {
-            background-color: #e6a700; /* Darker shade of Olympic Yellow */
+            background-color: #e6a700;
         }
 
         h2,
         h3,
         h5 {
             font-family: Georgia, serif;
-            color: #0078D0; /* Olympic Blue for headings */
+            color: #0078D0;
         }
 
-        /* Custom card styles for Olympic Menu */
+
         .menu-card {
-            background-color: #d4edda; /* Lighter Olympic Green */
-            color: #155724; /* Darker text for contrast */
-            border-radius: 5px; /* Rounded corners */
-            padding: 20px; /* Padding inside the card */
-            margin: 20px 0; /* Margin around the card */
+            background-color: #d4edda;
+            color: #155724;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
         }
 
-        /* Custom card styles for Olympic Events */
+
         .event-card {
-            background-color: #f8d7da; /* Lighter Olympic Red */
-            color: #721c24; /* Darker text for contrast */
-            border-radius: 5px; /* Rounded corners */
-            padding: 20px; /* Padding inside the card */
-            margin: 20px 0; /* Margin around the card */
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
         }
 
-        /* Custom card styles for About Us and Contact Us */
+
         .custom-card {
-            background-color: #fef9e7; /* Light yellow background */
-            border: 1px solid #FFB114; /* Olympic Yellow border */
-            border-radius: 5px; /* Rounded corners */
-            padding: 20px; /* Padding inside the card */
-            margin: 20px 0; /* Margin around the card */
+            background-color: #fef9e7;
+            border: 1px solid #FFB114;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
         }
+
+
+        .carousel-caption {
+        font-family: Impact, sans-serif;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        background: rgba(0, 120, 208, 0.7); 
+        padding: 15px;
+        border-radius: 5px;
+    }
     </style>
 </head>
 
@@ -102,41 +115,37 @@
 
     <main class="container mt-4" id="home">
         <h2 class="text-center">Featured Menu Items</h2>
- <div id="featuredMenuCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+        <div id="featuredMenuCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
             <div class="carousel-inner">
-                <div class="carousel-item active"
-                    style="background-image: url('images/cafe mocha.jpg'); height: 400px; background-size: cover; background-position: center;">
+                <div class="carousel-item active" style="background-image: url('images/cafe mocha.jpg'); height: 400px; background-size: cover; background-position: center;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Cafe Mocha</h5>
+                        <h5 style="color: #FFB114;">Cafe Mocha</h5> <!-- Olympic Yellow -->
                         <p>A rich blend of espresso, steamed milk, and chocolate syrup, topped with whipped cream.</p>
                     </div>
                 </div>
-                <div class="carousel-item"
-                    style="background-image: url('images/croissant.jpg'); height: 400px; background-size: cover; background-position: center;">
+                <div class="carousel-item" style="background-image: url('images/croissant.jpg'); height: 400px; background-size: cover; background-position: center;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Freshly Baked Croissant</h5>
+                        <h5 style="color: #FFB114;">Freshly Baked Croissant</h5>
                         <p>Flaky and buttery croissant served with a choice of jam or honey.</p>
                     </div>
                 </div>
-                <div class="carousel-item"
-                    style="background-image: url('images/Fruit tart.jpeg'); height: 400px; background-size: cover; background-position: center;">
+                <div class="carousel-item" style="background-image: url('images/Fruit tart.jpeg'); height: 400px; background-size: cover; background-position: center;">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Seasonal Fruit Tart</h5>
+                        <h5 style="color: #FFB114;">Seasonal Fruit Tart</h5>
                         <p>A delightful tart filled with creamy custard and topped with fresh seasonal fruits.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#featuredMenuCarousel"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#featuredMenuCarousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#featuredMenuCarousel"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#featuredMenuCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        
 
         <h2 class="text-center mt-5">Upcoming Events</h2>
         <ul class="list-group">
@@ -146,8 +155,8 @@
     </main>
 
     <section class="container mt-4" id="menu">
-        <h2 class="text-center">Our Olympic Menu</h2>
-        <div class="row text-center"> 
+        <h2 class="text-center">Our Menu</h2>
+        <div class="row text-center">
             <div class="col-md-4">
                 <div class="menu-card">
                     <h3>Cafe Latte</h3>
@@ -159,7 +168,8 @@
             <div class="col-md-4">
                 <div class="menu-card">
                     <h3>Chocolate Chip Cookies</h3>
-                    <img src="images/choco chips cookie.jpeg" class="img-fluid img-thumbnail" alt="Chocolate Chip Cookies">
+                    <img src="images/choco chips cookie.jpeg" class="img-fluid img-thumbnail"
+                        alt="Chocolate Chip Cookies">
                     <p>Freshly baked cookies with gooey chocolate chips.</p>
                     <p style="font-weight: bold;">Price: $2.50</p>
                 </div>
@@ -176,8 +186,8 @@
     </section>
 
     <section class="container mt-4" id="events">
-        <h2 class="text-center">Our Olympic Events</h2>
-        <div class="row text-center"> 
+        <h2 class="text-center">Our Events</h2>
+        <div class="row text-center">
             <div class="col-md-6">
                 <div class="event-card">
                     <h3>Live Music Night</h3>
@@ -186,28 +196,29 @@
                         coffee and a cozy atmosphere!</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col -md-6">
                 <div class="event-card">
-                    <h3>Coffee Tasting Workshop<h3>
-                    <img src="images/coffee workshop.jpeg" class="img-fluid img-thumbnail" alt="Coffee Tasting Workshop">
-                    <p>Learn about different coffee beans and brewing techniques in our monthly coffee tasting workshop.
-                        First Sunday of the month!</p>
+                    <h3>Coffee Tasting Workshop</h3>
+                    <img src="images/coffee workshop.jpeg" class="img-fluid img-thumbnail"
+                        alt="Coffee Tasting Workshop">
+                    <p>Learn about different coffee beans and brewing techniques while enjoying a selection of our finest brews.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="container mt-4" id="about">
-        <div class="card custom-card"> 
+        <div class="card custom-card">
             <div class="card-body">
                 <h2 class="text-center">About Us</h2>
-                <p>Cafe Delight is a cozy spot where you can enjoy a variety of delicious coffee and baked goods. We aim to create a warm atmosphere for our customers to relax and enjoy their time.</p>
+                <p>Cafe Delight is a cozy spot where you can enjoy a variety of delicious coffee and baked goods. We aim
+                    to create a warm atmosphere for our customers to relax and enjoy their time.</p>
             </div>
         </div>
     </section>
-    
+
     <section class="container mt-4" id="contact">
-        <div class="card custom-card"> 
+        <div class="card custom-card">
             <div class="card-body">
                 <h2 class="text-center">Contact Us</h2>
                 <p>If you have any questions or would like to make a reservation, please reach out to us!</p>
